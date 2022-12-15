@@ -1,1 +1,9 @@
-
+<p>问题重述:预测未知经营状况的公司，即破产or 正常<o/>
+ 
+<p>方法一：在模型上优化overfit，引入regularization,调整最优的w,b的值，使得模型最小cost，以及刚好fit<o/>
+ 
+<p>方法二：在sklearn.linear_model中，引入logisticRegression估计结果，同时最终用score函数判断预测精度<o/>
+ 
+<p>Conclusion :<o/>
+<p>1. 结果预测精度在0.87左右，加入regularization后，收敛加快了(前后差值小于0.001)，但预测精度未改变，应该是由于样本量少了。<o/>
+<p>2. 通过图片和w大小，发现总负债率和短期支付能力对分类贡献较大。<o/>
